@@ -1,0 +1,123 @@
+﻿@import url("../../daVasstTrees.css");
+.bodySignUp {
+    width:100vw;
+    height:100vh;
+    background:linear-gradient(to right, var(--color__green_left), var(--color__green_right));
+}
+.formSignUp {
+    width: 25%;
+    height: 55%;
+    position: absolute;
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background: var(--color_white_main);
+    &__taikhoan {
+        width: 100%;
+        position: relative;
+        margin-block: 10px;
+
+        &__inp {
+            width: 100%;
+            outline: none;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding-left: 5px;
+            padding-block: 10px;
+            font-size: 16px;
+            background: transparent;
+
+            &:focus {
+                border: 1px solid var(--color_green_main);
+            }
+
+            &:focus + .formSignUp__taikhoan__label {
+                background: var(--color_white_main);
+                top: 0;
+                z-index: 1;
+                color: var(--color_green_main);
+            }
+        }
+
+        &__label {
+            position: absolute;
+            transition: all 0.25s ease;
+            top: 50%;
+            left: 5px;
+            transform: translateY(-50%);
+            z-index: -1;
+        }
+    }
+
+    &__password {
+        margin-top: 0px;
+        @extend .formSignUp__taikhoan;
+
+        &__inp {
+            @extend .formSignUp__taikhoan__inp;
+        }
+
+        &__label {
+            @extend .formSignUp__taikhoan__label;
+        }
+    }
+
+    &__repassword {
+        margin-top: 0px;
+        @extend .formSignUp__taikhoan;
+
+        &__inp {
+            @extend .formSignUp__taikhoan__inp;
+        }
+
+        &__label {
+            @extend .formSignUp__taikhoan__label;
+        }
+    }
+    &__redirect {
+        width: 100%;
+        margin-top: 5px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:991.98px) {
+    .formSignUp {
+        width: 40%;
+        height: 40%;
+    }
+}
+
+@media screen and (max-width:765.98px) {
+    .formSignUp {
+        width: 50%;
+        height: 40%;
+    }
+}
+
+@media screen and (max-width:575.98px) {
+    .formSignUp {
+        width: 65%;
+        height: 40%;
+
+        &__redirect {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width:329.98px) {
+    .formSignUp {
+        width: 90%;
+        height: 45%;
+
+        &__redirect {
+            font-size: 12px;
+        }
+    }
+}

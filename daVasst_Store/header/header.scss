@@ -1,0 +1,120 @@
+﻿@import url("../../daVasstTrees.css");
+.headerNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: var(--color_white_main);
+    padding-block: 10px;
+
+    &__logo {
+        color: var(--color_green_main);
+        font-size: 35px;
+        font-weight: bold;
+        width: 20%;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    &-list {
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        align-items: center;
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--color_green_main);
+            width: calc(70% / 5);
+            text-align: center;
+            height: 100%;
+            border-radius: 10px;
+            transition: all 0.25s ease;
+            font-size: 18px;
+            position: relative;
+
+            a {
+                color: var(--color_green_main);
+            }
+
+            &:hover {
+                background-color: #7DD679;
+                color: var(--color_white_main);
+            }
+
+            &:hover a{
+                color: var(--color_white_main);
+            }
+
+            &:hover .headerNav-list__sub {
+                display: block;
+                width: 100%;
+                transform: translateY(100%);
+                z-index: 9;
+                bottom: 0;
+            }
+        }
+
+        &__sub {
+            display: none;
+            position: absolute;
+
+            &-item {
+                background: white;
+                color: var(--color_green_main);
+                padding: 10px;
+                cursor: pointer;
+                position: relative;
+
+                &:hover {
+                    background-color: var(--color_green_main);
+                    color: var(--color_white_main);
+                }
+
+                &:hover a {
+                    color: var(--color_white_main);
+                }
+
+                &:hover .treeDetail {
+                    display: block;
+                    z-index: 99;
+                    transform: translateX(100%);
+                    width: 100%;
+                }
+
+                span {
+                    position: absolute;
+                    right: 10px;
+                    font-size: 18px;
+                }
+
+                .treeDetail {
+                    display: none;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+
+                    &-item {
+                        width: 100%;
+                        padding: 10px;
+                        background: white;
+
+                        a {
+                            color: var(--color_green_main);
+                        }
+
+                        &:hover {
+                            background-color: var(--color_green_main);
+                        }
+
+                        &:hover a {
+                            color: var(--color_white_main);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

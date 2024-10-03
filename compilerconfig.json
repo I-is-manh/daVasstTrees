@@ -1,0 +1,18 @@
+﻿[
+  {
+    "outputFile": "daVasst_Store/login/login.css",
+    "inputFile": "daVasst_Store/login/login.scss"
+  },
+  {
+    "outputFile": "daVasstTrees.css",
+    "inputFile": "daVasstTrees.scss"
+  },
+  {
+    "outputFile": "daVasst_Store/signupControl/signup.css",
+    "inputFile": "daVasst_Store/signupControl/signup.scss"
+  },
+  {
+    "outputFile": "daVasst_Store/Header/header.css",
+    "inputFile": "daVasst_Store/Header/header.scss"
+  }
+]
