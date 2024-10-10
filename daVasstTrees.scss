@@ -9,6 +9,8 @@
     --color__green_left: #96BC76;
     --color__green_right: #88B765;
     --color__button_hover: #7DD679;
+    --color__fa: #FAFAFA;
+    --color__price: #E04C78;
 }
 ul{
     list-style:none;
@@ -25,4 +27,16 @@ a{
     border-radius: 5px;
     border: none;
     cursor: pointer;
+}
+.container-fluid{
+    width:100%;
+    padding-inline:15px;
+    /*border:1px solid black;*/
+    background:var(--color__fa);
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+    background: var(--color__fa);
 }

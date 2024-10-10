@@ -1,0 +1,85 @@
+﻿@import url("../../daVasstTrees.css");
+.category {
+    width: 22%;
+    background: var(--color_white_main);
+
+    &-surro {
+        width: 100%;
+
+        &__title {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            background: var(--color_green_main);
+            color: var(--color_white_main);
+            padding-block: 15px;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 600;
+
+            img {
+                color: white;
+                margin-right: 10px;
+            }
+        }
+
+        hr {
+            margin-top: 5px;
+            background: rgba(0,0,0,0.5);
+        }
+
+        &-list {
+            &__item {
+                padding-left: 10px;
+                color: var(--color_green_main);
+                padding-block: 15px;
+                cursor: pointer;
+                font-size: 17px;
+                border-bottom: 1px solid rgba(0,0,0,0.3);
+                transition: all 0.25s ease;
+                a{
+                    display:block;
+                    width:100%;
+                }
+                &:hover {
+                    background: var(--color_green_main);
+                }
+
+                &:hover a {
+                    color: var(--color_white_main);
+                }
+            }
+        }
+    }
+
+    &-line {
+        padding-left: 10px;
+        font-size: 22px;
+        font-weight:bold;
+        margin-block: 15px;
+        color: var(--color_green_main);
+        
+    }
+
+    &-filter {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        justify-content: center;
+        color: var(--color_green_main);
+        font-size:17px;
+
+        &__surro {
+            width: 100%;
+            padding-block: 10px;
+        }
+    }
+}
+.active{
+    background:var(--color_green_main);
+    .active-a{
+        color:var(--color_white_main);
+    }
+}

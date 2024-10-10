@@ -12,17 +12,19 @@
     padding-inline: 20px;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 5px;
     background: var(--color_white_main);
+
     &__taikhoan {
         width: 100%;
         position: relative;
-        margin-block:15px;
+        margin-block: 15px;
+
         &__label {
             position: absolute;
             transition: all 0.25s ease;
@@ -41,10 +43,12 @@
             padding-block: 10px;
             font-size: 16px;
             background: transparent;
-            &:focus {
+
+            &:focus, &:user-valid {
                 border: 1px solid var(--color_green_main);
             }
-            &:focus + .formLogin__taikhoan__label {
+
+            &:focus + .formLogin__taikhoan__label, &:user-valid + .formLogin__taikhoan__label {
                 background: var(--color_white_main);
                 top: 0;
                 z-index: 1;
@@ -55,19 +59,31 @@
 
     &__password {
         @extend .formLogin__taikhoan;
-        margin-top:0px;
+        margin-top: 0px;
+        margin-bottom:3px;
+
         &__inp {
             @extend .formLogin__taikhoan__inp;
         }
+
         &__label {
             @extend .formLogin__taikhoan__label;
         }
     }
-    &__redirect{
+    &-labelError{
+        color:red;
         width:100%;
-        display:flex;
-        justify-content:space-around;
-        margin-top:10px;
+        margin-bottom:3px;
+        display:none;
+    }
+    &__redirect {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+    &__btn{
+        margin-top:15px;
     }
 }
 @media screen and (max-width:991.98px){

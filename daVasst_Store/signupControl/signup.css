@@ -34,11 +34,12 @@
   padding-block: 10px;
   font-size: 16px;
   background: transparent;
+  position: relative;
 }
-.formSignUp__taikhoan__inp:focus, .formSignUp__repassword__inp:focus, .formSignUp__password__inp:focus {
+.formSignUp__taikhoan__inp:focus, .formSignUp__repassword__inp:focus, .formSignUp__password__inp:focus, .formSignUp__taikhoan__inp:user-valid, .formSignUp__repassword__inp:user-valid, .formSignUp__password__inp:user-valid {
   border: 1px solid var(--color_green_main);
 }
-.formSignUp__taikhoan__inp:focus + .formSignUp__taikhoan__label, .formSignUp__taikhoan__inp:focus + .formSignUp__repassword__label, .formSignUp__repassword__inp:focus + .formSignUp__taikhoan__label, .formSignUp__repassword__inp:focus + .formSignUp__repassword__label, .formSignUp__taikhoan__inp:focus + .formSignUp__password__label, .formSignUp__repassword__inp:focus + .formSignUp__password__label, .formSignUp__password__inp:focus + .formSignUp__taikhoan__label, .formSignUp__password__inp:focus + .formSignUp__repassword__label, .formSignUp__password__inp:focus + .formSignUp__password__label {
+.formSignUp__taikhoan__inp:focus + .formSignUp__taikhoan__label, .formSignUp__taikhoan__inp:focus + .formSignUp__repassword__label, .formSignUp__repassword__inp:focus + .formSignUp__taikhoan__label, .formSignUp__repassword__inp:focus + .formSignUp__repassword__label, .formSignUp__taikhoan__inp:focus + .formSignUp__password__label, .formSignUp__repassword__inp:focus + .formSignUp__password__label, .formSignUp__password__inp:focus + .formSignUp__taikhoan__label, .formSignUp__password__inp:focus + .formSignUp__repassword__label, .formSignUp__password__inp:focus + .formSignUp__password__label, .formSignUp__taikhoan__inp:user-valid + .formSignUp__taikhoan__label, .formSignUp__taikhoan__inp:user-valid + .formSignUp__repassword__label, .formSignUp__repassword__inp:user-valid + .formSignUp__taikhoan__label, .formSignUp__repassword__inp:user-valid + .formSignUp__repassword__label, .formSignUp__taikhoan__inp:user-valid + .formSignUp__password__label, .formSignUp__repassword__inp:user-valid + .formSignUp__password__label, .formSignUp__password__inp:user-valid + .formSignUp__taikhoan__label, .formSignUp__password__inp:user-valid + .formSignUp__repassword__label, .formSignUp__password__inp:user-valid + .formSignUp__password__label {
   background: var(--color_white_main);
   top: 0;
   z-index: 1;

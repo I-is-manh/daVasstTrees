@@ -14,5 +14,57 @@
   {
     "outputFile": "daVasst_Store/Header/header.css",
     "inputFile": "daVasst_Store/Header/header.scss"
+  },
+  {
+    "outputFile": "daVasst_Store/footer/footer.css",
+    "inputFile": "daVasst_Store/footer/footer.scss"
+  },
+  {
+    "outputFile": "daVasst_Store/banner/banner.css",
+    "inputFile": "daVasst_Store/banner/banner.scss"
+  },
+  {
+    "outputFile": "daVasst_Store/BreadCrumbs/breadcrumbs.css",
+    "inputFile": "daVasst_Store/BreadCrumbs/breadcrumbs.scss"
+  },
+  {
+    "outputFile": "daVasst_Store/bestseller/bestseller.css",
+    "inputFile": "daVasst_Store/bestseller/bestseller.scss"
+  },
+  {
+    "outputFile": "daVasst_Store/CayDeBan/caydeban.css",
+    "inputFile": "daVasst_Store/CayDeBan/caydeban.scss"
+  },
+  {
+    "outputFile": "daVasst_Store/CayThuySinh/caythuysinh.css",
+    "inputFile": "daVasst_Store/CayThuySinh/caythuysinh.scss"
+  },
+  {
+    "outputFile": "daVasst_Store/CaySenDa/senda.css",
+    "inputFile": "daVasst_Store/CaySenDa/senda.scss"
+  },
+  {
+    "outputFile": "daVasst_Store/SearchBox/search.css",
+    "inputFile": "daVasst_Store/SearchBox/search.scss"
+  },
+  {
+    "outputFile": "daVasst_Store/ChauCay/chaucay.css",
+    "inputFile": "daVasst_Store/ChauCay/chaucay.scss"
+  },
+  {
+    "outputFile": "daVasst_Store/Category/category.css",
+    "inputFile": "daVasst_Store/Category/category.scss"
+  },
+  {
+    "outputFile": "daVasst_Store/LinkCss/productDetail.css",
+    "inputFile": "daVasst_Store/LinkCss/productDetail.scss"
+  },
+  {
+    "outputFile": "daVasst_Store/LinkCss/productList.css",
+    "inputFile": "daVasst_Store/LinkCss/productList.scss"
+  },
+  {
+    "outputFile": "daVasst_Store/productListItem/productListItem.css",
+    "inputFile": "daVasst_Store/productListItem/productListItem.scss"
   }
 ]

@@ -1,0 +1,31 @@
+﻿@import url("../../daVasstTrees.css");
+.searchBox {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-block: 7px;
+    padding-right:10px;
+
+    &-item {
+        display: flex;
+        align-items: center;
+        position: relative;
+        border: 1px solid black;
+        border-radius: 20px;
+        cursor:pointer;
+        &__inp {
+            width: 86%;
+            height: 100%;
+            outline: none;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding-left: 5px;
+            font-size: 18px;
+            border: none; 
+        }
+        &__icon {
+            position: absolute;
+            right: 0;
+        }
+    }
+}

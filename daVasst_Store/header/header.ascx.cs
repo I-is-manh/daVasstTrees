@@ -12,7 +12,19 @@ namespace daVasstTrees.daVasst_Store.header
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+            if (Session["checkdn"] == null)
+            {
+                tkButton.Style.Add("display", "none");
+                dnButton.Style.Add("display", "block");
+                dkButton.Style.Add("display", "block");
+                
+            }
+            else
+            {
+                tkButton.Style.Add("display", "block");
+                dnButton.Style.Add("display","none");
+                dkButton.Style.Add("display", "none");
+            }
         }
     }
 }

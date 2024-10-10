@@ -1,0 +1,11 @@
+﻿@import url("../../daVasstTrees.css");
+.productList {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    .detailmain {
+        width: 95%;
+        display:flex;
+        gap:20px;
+    }
+}

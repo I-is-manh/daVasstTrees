@@ -74,8 +74,74 @@
     <Content Include="daVasstTrees.min.css">
       <DependentUpon>daVasstTrees.css</DependentUpon>
     </Content>
+    <Content Include="daVasstTree\productList.aspx" />
+    <Content Include="daVasstTree\Home.aspx" />
+    <Content Include="daVasstTree\Infomation.aspx" />
     <Content Include="daVasstTree\login.aspx" />
     <Content Include="daVasstTree\signup.aspx" />
+    <Content Include="daVasst_Store\banner\banner.css">
+      <DependentUpon>banner.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\banner\banner.min.css">
+      <DependentUpon>banner.css</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\banner\bannerControl.ascx" />
+    <Content Include="daVasst_Store\BestSeller\bestseller.ascx" />
+    <Content Include="daVasst_Store\BestSeller\bestseller.css">
+      <DependentUpon>bestseller.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\BestSeller\bestseller.min.css">
+      <DependentUpon>bestseller.css</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\BreadCrumbs\breadcrumb.ascx" />
+    <Content Include="daVasst_Store\BreadCrumbs\breadcrumbs.css">
+      <DependentUpon>breadcrumbs.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\BreadCrumbs\breadcrumbs.min.css">
+      <DependentUpon>breadcrumbs.css</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\Category\category.ascx" />
+    <Content Include="daVasst_Store\Category\category.css">
+      <DependentUpon>category.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\Category\category.min.css">
+      <DependentUpon>category.css</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\CayDeBan\caydeban.ascx" />
+    <Content Include="daVasst_Store\CayDeBan\caydeban.css">
+      <DependentUpon>caydeban.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\CayDeBan\caydeban.min.css">
+      <DependentUpon>caydeban.css</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\CaySenDa\senda.ascx" />
+    <Content Include="daVasst_Store\CaySenDa\senda.css">
+      <DependentUpon>senda.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\CaySenDa\senda.min.css">
+      <DependentUpon>senda.css</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\CayThuySinh\CayThuySinh.ascx" />
+    <Content Include="daVasst_Store\CayThuySinh\caythuysinh.css">
+      <DependentUpon>caythuysinh.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\CayThuySinh\caythuysinh.min.css">
+      <DependentUpon>caythuysinh.css</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\ChauCay\chaucay.ascx" />
+    <Content Include="daVasst_Store\ChauCay\chaucay.css">
+      <DependentUpon>chaucay.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\ChauCay\chaucay.min.css">
+      <DependentUpon>chaucay.css</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\footer\footer.ascx" />
+    <Content Include="daVasst_Store\footer\footer.css">
+      <DependentUpon>footer.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\footer\footer.min.css">
+      <DependentUpon>footer.css</DependentUpon>
+    </Content>
     <Content Include="daVasst_Store\header\header.ascx" />
     <Content Include="daVasst_Store\header\header.css">
       <DependentUpon>header.scss</DependentUpon>
@@ -83,25 +149,107 @@
     <Content Include="daVasst_Store\header\header.min.css">
       <DependentUpon>header.css</DependentUpon>
     </Content>
+    <Content Include="daVasst_Store\header\index.js" />
+    <Content Include="daVasst_Store\LinkCss\productList.css">
+      <DependentUpon>productList.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\LinkCss\productList.min.css">
+      <DependentUpon>productList.css</DependentUpon>
+    </Content>
     <Content Include="daVasst_Store\login\login.css">
       <DependentUpon>login.scss</DependentUpon>
     </Content>
+    <Content Include="daVasst_Store\login\login.js" />
     <Content Include="daVasst_Store\login\login.min.css">
       <DependentUpon>login.css</DependentUpon>
     </Content>
     <Content Include="daVasst_Store\login\loginControl.ascx" />
+    <Content Include="daVasst_Store\productListItem\productListItem.ascx" />
+    <Content Include="daVasst_Store\productListItem\productListItem.css">
+      <DependentUpon>productListItem.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\productListItem\productListItem.min.css">
+      <DependentUpon>productListItem.css</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\SearchBox\search.ascx" />
+    <Content Include="daVasst_Store\SearchBox\search.css">
+      <DependentUpon>search.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\SearchBox\search.min.css">
+      <DependentUpon>search.css</DependentUpon>
+    </Content>
     <Content Include="daVasst_Store\signupControl\signup.css">
       <DependentUpon>signup.scss</DependentUpon>
     </Content>
+    <Content Include="daVasst_Store\signupControl\signup.js" />
     <Content Include="daVasst_Store\signupControl\signup.min.css">
       <DependentUpon>signup.css</DependentUpon>
     </Content>
     <Content Include="daVasst_Store\signupControl\signupControl.ascx" />
     <Content Include="Global.asax" />
-    <Content Include="Image\login_bg.jpg" />
+    <Content Include="Image\aytao.jpg" />
+    <Content Include="Image\banner2.png" />
+    <Content Include="Image\banner.png" />
+    <Content Include="Image\bonsaimini.jpg" />
+    <Content Include="Image\caychanhleo.jpg" />
+    <Content Include="Image\caydeban.jpg" />
+    <Content Include="Image\caynho.jpg" />
+    <Content Include="Image\cayoi.jpg" />
+    <Content Include="Image\cayphuquy.jpg" />
+    <Content Include="Image\caythuyngan.jpg" />
+    <Content Include="Image\cayxoai.jpg" />
+    <Content Include="Image\chaucomposite.jpg" />
+    <Content Include="Image\chaudatnung.jpg" />
+    <Content Include="Image\chaunhuatreo.jpg" />
+    <Content Include="Image\chauxanh.jpg" />
+    <Content Include="Image\chauximang.jpg" />
+    <Content Include="Image\chauxutrang.jpg" />
+    <Content Include="Image\chupin.jpg" />
+    <Content Include="Image\cuctanando.jpg" />
+    <Content Include="Image\duongsitreo.jpg" />
+    <Content Include="Image\menu-2-line.png" />
+    <Content Include="Image\ngocngan.jpg" />
+    <Content Include="Image\nhatviet.jpg" />
+    <Content Include="Image\raumathuysinh.jpg" />
+    <Content Include="Image\raumatreo.jpg" />
+    <Content Include="Image\search-line.png" />
+    <Content Include="Image\search.jpg" />
+    <Content Include="Image\sendanau.jpg" />
+    <Content Include="Image\sendangoc.jpg" />
+    <Content Include="Image\taiquan.jpg" />
+    <Content Include="Image\thailaitimleo.jpg" />
+    <Content Include="Image\traitimxah.jpg" />
+    <Content Include="Image\traubatreo.jpg" />
+    <Content Include="Image\xuongrong.jpg" />
+    <Content Include="Image\xuongrongbattien.jpg" />
+    <Content Include="Image\xuongrongcauvong.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\categoryDao.cs" />
+    <Compile Include="DAO\productDao.cs" />
+    <Compile Include="DAO\userDao.cs" />
+    <Compile Include="daVasstTree\productList.aspx.cs">
+      <DependentUpon>productList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasstTree\productList.aspx.designer.cs">
+      <DependentUpon>productList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasstTree\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasstTree\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasstTree\Infomation.aspx.cs">
+      <DependentUpon>Infomation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasstTree\Infomation.aspx.designer.cs">
+      <DependentUpon>Infomation.aspx</DependentUpon>
+    </Compile>
     <Compile Include="daVasstTree\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -115,6 +263,69 @@
     </Compile>
     <Compile Include="daVasstTree\signup.aspx.designer.cs">
       <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasst_Store\banner\bannerControl.ascx.cs">
+      <DependentUpon>bannerControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasst_Store\banner\bannerControl.ascx.designer.cs">
+      <DependentUpon>bannerControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasst_Store\BestSeller\bestseller.ascx.cs">
+      <DependentUpon>bestseller.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasst_Store\BestSeller\bestseller.ascx.designer.cs">
+      <DependentUpon>bestseller.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasst_Store\BreadCrumbs\breadcrumb.ascx.cs">
+      <DependentUpon>breadcrumb.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasst_Store\BreadCrumbs\breadcrumb.ascx.designer.cs">
+      <DependentUpon>breadcrumb.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasst_Store\Category\category.ascx.cs">
+      <DependentUpon>category.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasst_Store\Category\category.ascx.designer.cs">
+      <DependentUpon>category.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasst_Store\CayDeBan\caydeban.ascx.cs">
+      <DependentUpon>caydeban.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasst_Store\CayDeBan\caydeban.ascx.designer.cs">
+      <DependentUpon>caydeban.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasst_Store\CaySenDa\senda.ascx.cs">
+      <DependentUpon>senda.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasst_Store\CaySenDa\senda.ascx.designer.cs">
+      <DependentUpon>senda.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasst_Store\CayThuySinh\CayThuySinh.ascx.cs">
+      <DependentUpon>CayThuySinh.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasst_Store\CayThuySinh\CayThuySinh.ascx.designer.cs">
+      <DependentUpon>CayThuySinh.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasst_Store\ChauCay\chaucay.ascx.cs">
+      <DependentUpon>chaucay.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasst_Store\ChauCay\chaucay.ascx.designer.cs">
+      <DependentUpon>chaucay.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasst_Store\footer\footer.ascx.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasst_Store\footer\footer.ascx.designer.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
     </Compile>
     <Compile Include="daVasst_Store\header\header.ascx.cs">
       <DependentUpon>header.ascx</DependentUpon>
@@ -130,6 +341,20 @@
     <Compile Include="daVasst_Store\login\loginControl.ascx.designer.cs">
       <DependentUpon>loginControl.ascx</DependentUpon>
     </Compile>
+    <Compile Include="daVasst_Store\productListItem\productListItem.ascx.cs">
+      <DependentUpon>productListItem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasst_Store\productListItem\productListItem.ascx.designer.cs">
+      <DependentUpon>productListItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasst_Store\SearchBox\search.ascx.cs">
+      <DependentUpon>search.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasst_Store\SearchBox\search.ascx.designer.cs">
+      <DependentUpon>search.ascx</DependentUpon>
+    </Compile>
     <Compile Include="daVasst_Store\signupControl\signupControl.ascx.cs">
       <DependentUpon>signupControl.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -140,6 +365,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Model\Categoryy.cs" />
+    <Compile Include="Model\Product.cs" />
+    <Compile Include="Model\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -150,6 +378,19 @@
     </None>
     <Content Include="daVasst_Store\signupControl\signup.scss" />
     <Content Include="daVasst_Store\header\header.scss" />
+    <Content Include="daVasst_Store\footer\footer.scss" />
+    <Content Include="daVasst_Store\banner\banner.scss" />
+    <Content Include="daVasst_Store\BreadCrumbs\breadcrumbs.scss" />
+    <Content Include="daVasst_Store\BestSeller\bestseller.scss" />
+    <Content Include="daVasst_Store\CayDeBan\caydeban.scss" />
+    <Content Include="daVasst_Store\CayThuySinh\caythuysinh.scss" />
+    <Content Include="daVasst_Store\CaySenDa\senda.scss" />
+    <Content Include="daVasst_Store\ChauCay\chaucay.scss" />
+    <Content Include="daVasst_Store\Category\category.scss" />
+    <None Include="daVasst_Store\footer\.editorconfig" />
+    <Content Include="daVasst_Store\SearchBox\search.scss" />
+    <Content Include="daVasst_Store\LinkCss\productList.scss" />
+    <Content Include="daVasst_Store\productListItem\productListItem.scss" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -158,6 +399,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

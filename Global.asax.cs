@@ -10,10 +10,9 @@ namespace daVasstTrees
 {
     public class Global : System.Web.HttpApplication
     {
-
+        
         protected void Application_Start(object sender, EventArgs e)
         {
-            //RegisterRoutes(RouteTable.Routes);
         }
 
         protected void Session_Start(object sender, EventArgs e)
