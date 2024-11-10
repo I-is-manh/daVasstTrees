@@ -1,0 +1,159 @@
+﻿@import url("../../daVasstTrees.css");
+.admin {
+  display: flex;
+}
+.admin-navigation {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 20%;
+  background: var(--color_white_main);
+}
+.admin-navigation__logo {
+  color: var(--color_green_main);
+  background: var(--color_white_main);
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  height: 80px;
+  line-height: 80px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.admin-navigation-router {
+  padding-top: 25px;
+}
+.admin-navigation-router-product img {
+  width: 35px;
+  height: 35px;
+  margin-right: 7px;
+  background: var(--color_white_main);
+  background-color: transparent;
+}
+.admin-navigation-router-product div {
+  display: flex;
+  align-items: center;
+  background: var(--color_white_main);
+  cursor: pointer;
+  position: relative;
+  padding-left: 5px;
+}
+.admin-navigation-router-product div .arrow {
+  position: absolute;
+  right: 0px;
+  background-color: transparent;
+}
+.admin-navigation-router-product-list {
+  background: var(--color_white_main);
+  display: none;
+}
+.admin-navigation-router-product-list__item {
+  background: var(--color_white_main);
+  padding-block: 10px;
+  transition: 0.25s ease;
+  padding-left: 45px;
+  display: flex;
+  align-items: center;
+}
+.admin-navigation-router-product-list__item:hover {
+  background: white;
+  cursor: pointer;
+}
+.admin-navigation-router-product-list__item img {
+  width: 20px;
+  height: 20px;
+  color: var(--color_white_main);
+}
+.admin-navigation-router-product-list__item img:hover {
+  color: white;
+}
+.admin-navigation-router-product-list__item a {
+  color: black;
+  width: 100%;
+  height: 100%;
+}
+.admin-navigation-router-product-list__item .arrow-item {
+  background-color: transparent;
+  width: 35px;
+  height: 35px;
+}
+.admin-content {
+  flex: 1;
+}
+.admin-content-header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-inline: 10px;
+  background: var(--color_white_main);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.admin-content-header__name {
+  text-align: right;
+  font-size: 25px;
+  width: 100%;
+}
+.admin-content-header img {
+  cursor: pointer;
+}
+.admin-content-header .searchBox {
+  width: fit-content;
+  display: flex;
+  margin-left: 20px;
+  background: white;
+}
+.admin-content-header .searchBox-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 35px;
+  cursor: pointer;
+}
+.admin-content-header .searchBox-item__inp {
+  width: 86%;
+  height: 100%;
+  outline: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-left: 5px;
+  font-size: 18px;
+  border: none;
+}
+.admin-content-header .searchBox-item__icon {
+  position: absolute;
+  right: 0;
+  background: white;
+}
+
+.arrow-down {
+  transform: rotate(90deg);
+}
+
+.list-show {
+  display: block;
+}
+
+.list-category {
+  display: none;
+}
+.list-category__item {
+  padding-left: 24%;
+  font-size: 18px;
+  padding-block: 7px;
+  transition: 0.25s ease;
+}
+.list-category__item a {
+  color: black;
+}
+.list-category__item:hover {
+  background: white;
+}
+
+.list-category__show {
+  display: block;
+}
+
+@media screen and (max-width: 992px) {
+  .admin-navigation {
+    display: none;
+  }
+}

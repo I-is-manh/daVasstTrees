@@ -22,7 +22,7 @@
     <p class="formLogin-labelError" runat="server" id="labelError">Sai email đăng nhập hoặc mật khẩu</p>
     <input type="submit" value="Đăng nhập" class="btnAll formLogin__btn"/>
     <div class="formLogin__redirect">
-        <a href="#" class="formLogin__redirect__password">Quên mật khẩu</a>
+        <a href="changePassword.aspx" class="formLogin__redirect__password">Quên mật khẩu</a>
         <a href="../../daVasstTree/signup.aspx" class="formLogin__redirect__signup">Đăng ký tài khoản</a>
     </div>
 </form>

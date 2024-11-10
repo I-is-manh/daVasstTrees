@@ -14,7 +14,6 @@
 <head runat="server">
     <title>daVasst's Trees</title>
     <link href="../daVasst_Store/CayDeBan/caydeban.css" rel="stylesheet" type="text/css" />
-    
 </head>
 <body>
     <daVasst:header runat="server"/>

@@ -106,5 +106,16 @@
             </div>
         </div>
     </div>
-
+    <div class="lisstressparent-pagination">
+        <div class="lisstressparent-pagination__list" id="pageList" runat="server">
+            <%--<img src="../../Image/arrow-left-line.png" alt="Alternate Text" class="lisstressparent-pagination__list-img"/>
+            <span  class="lisstressparent-pagination__list-item"><a href="#">1</a></span>
+            <span  class="lisstressparent-pagination__list-item"><a href="#">2</a></span>
+            <span  class="lisstressparent-pagination__list-item"><a href="#">3</a></span>
+            <span  class="lisstressparent-pagination__list-item"><a href="#">4</a></span>
+            <span  class="lisstressparent-pagination__list-item"><a href="#">5</a></span>
+            <img src="../../Image/arrow-right-line.png" alt="Alternate Text" class="lisstressparent-pagination__list-img"/>--%>
+        </div>
+    </div>
 </div>
+ <script src="../daVasst_Store/productListItem/productListItem.js"></script>

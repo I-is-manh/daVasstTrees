@@ -13,6 +13,8 @@ namespace daVasstTrees
         
         protected void Application_Start(object sender, EventArgs e)
         {
+            List<string> list = new List<string>();
+            Application["dsTk"] = list;
         }
 
         protected void Session_Start(object sender, EventArgs e)

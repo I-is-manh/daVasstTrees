@@ -1,0 +1,106 @@
+﻿@import url("../../daVasstTrees.css");
+.container-fluid .cartDetail {
+  width: 100%;
+  display: flex;
+}
+.container-fluid .cartDetail-list {
+  width: 70%;
+}
+.container-fluid .cartDetail-list__remove {
+  font-size: 20px;
+  background: var(--color_white_main);
+  color: var(--color_green_main);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.container-fluid .cartDetail-list .price {
+  color: var(--color_green_main);
+  font-size: 20px;
+}
+.container-fluid .cartDetail-list .btnupdate {
+  color: var(--color_green_main);
+  font-size: 20px;
+  border: none;
+  background: var(--color_white_main);
+  cursor: pointer;
+}
+.container-fluid .cartDetail-list .number {
+  font-size: 20px;
+  color: var(--color_green_main);
+  margin-inline: 15px;
+}
+.container-fluid .cartDetail th {
+  margin-bottom: 20px;
+  border: 1px solid red;
+}
+.container-fluid .cartDetail td {
+  text-align: center;
+  border: 1px solid black;
+}
+.container-fluid .cartDetail .product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-block: 10px;
+}
+.container-fluid .cartDetail .product img {
+  width: 90px;
+  height: 90px;
+}
+.container-fluid .cartDetail .product span {
+  cursor: pointer;
+  color: var(--color_green_main);
+  font-size: 20px;
+}
+.container-fluid .cartDetail-total {
+  width: 30%;
+  border: 1px solid red;
+  padding-inline: 15px;
+  padding-top: 15px;
+}
+.container-fluid .cartDetail-total__title {
+  font-size: 24px;
+  color: var(--color_green_main);
+  margin-bottom: 5px;
+}
+.container-fluid .cartDetail-total__price {
+  color: var(--color_green_main);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.container-fluid .cartDetail-total__btn {
+  background: var(--color_green_main);
+  color: var(--color_white_main);
+  font-size: 17px;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.container-fluid .cartDetail-total__btn a {
+  color: var(--color_white_main);
+}
+
+.cartempty {
+  font-size: 27px;
+  color: var(--color_green_main);
+  margin-bottom: 20px;
+}
+.labelgiamgia{
+    color:var(--color_green_main);
+    margin-right:5px;
+    font-size:22px;
+    margin-bottom:8px;
+}
+.giamgia {
+    width: 100%;
+    height: 25px;
+    padding-left: 5px;
+    font-size: 17px;
+    color: var(--color_green_main);
+    margin-bottom: 8px;
+}

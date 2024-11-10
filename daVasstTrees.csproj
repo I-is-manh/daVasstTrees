@@ -67,18 +67,34 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="daVasstAdmin\addProduct.aspx" />
+    <Content Include="daVasstAdmin\admin.aspx" />
+    <Content Include="daVasstAdmin\daVasstAdmin.Master" />
     <None Include="daVasstTrees.scss" />
+    <Content Include="daVasstAdmin\dsTaiKhoan.aspx" />
+    <Content Include="daVasstAdmin\ListProduct.aspx" />
+    <Content Include="daVasstAdmin\login4Admin.aspx" />
+    <Content Include="daVasstAdmin\productDetailAdmin.aspx" />
+    <Content Include="daVasstAdmin\removeProduct.aspx" />
     <Content Include="daVasstTrees.css">
       <DependentUpon>daVasstTrees.scss</DependentUpon>
     </Content>
     <Content Include="daVasstTrees.min.css">
       <DependentUpon>daVasstTrees.css</DependentUpon>
     </Content>
+    <Content Include="daVasstTree\cart.aspx" />
+    <Content Include="daVasstTree\changePassword.aspx" />
+    <Content Include="daVasstTree\confirmpay.aspx" />
+    <Content Include="daVasstTree\DkInfo.aspx" />
+    <Content Include="daVasstTree\OrderStatus.aspx" />
+    <Content Include="daVasstTree\productDetail.aspx" />
     <Content Include="daVasstTree\productList.aspx" />
     <Content Include="daVasstTree\Home.aspx" />
     <Content Include="daVasstTree\Infomation.aspx" />
     <Content Include="daVasstTree\login.aspx" />
+    <Content Include="daVasstTree\signout.aspx" />
     <Content Include="daVasstTree\signup.aspx" />
+    <Content Include="daVasstTree\ThanhToan.aspx" />
     <Content Include="daVasst_Store\banner\banner.css">
       <DependentUpon>banner.scss</DependentUpon>
     </Content>
@@ -100,10 +116,19 @@
     <Content Include="daVasst_Store\BreadCrumbs\breadcrumbs.min.css">
       <DependentUpon>breadcrumbs.css</DependentUpon>
     </Content>
+    <Content Include="daVasst_Store\CartDetail\cartDetail.ascx" />
+    <Content Include="daVasst_Store\CartDetail\cartDetail.css">
+      <DependentUpon>cartDetail.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\CartDetail\cartDetail.js" />
+    <Content Include="daVasst_Store\CartDetail\cartDetail.min.css">
+      <DependentUpon>cartDetail.css</DependentUpon>
+    </Content>
     <Content Include="daVasst_Store\Category\category.ascx" />
     <Content Include="daVasst_Store\Category\category.css">
       <DependentUpon>category.scss</DependentUpon>
     </Content>
+    <Content Include="daVasst_Store\Category\category.js" />
     <Content Include="daVasst_Store\Category\category.min.css">
       <DependentUpon>category.css</DependentUpon>
     </Content>
@@ -150,26 +175,113 @@
       <DependentUpon>header.css</DependentUpon>
     </Content>
     <Content Include="daVasst_Store\header\index.js" />
+    <Content Include="daVasst_Store\Infomation\Infomation.ascx" />
+    <Content Include="daVasst_Store\Infomation\Infomation.css">
+      <DependentUpon>Infomation.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\Infomation\Infomation.js" />
+    <Content Include="daVasst_Store\Infomation\Infomation.min.css">
+      <DependentUpon>Infomation.css</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\LinkCss\addproductAdmin.css">
+      <DependentUpon>addproductAdmin.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\LinkCss\addproductAdmin.min.css">
+      <DependentUpon>addproductAdmin.css</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\LinkCss\Admin.css">
+      <DependentUpon>Admin.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\LinkCss\Admin.min.css">
+      <DependentUpon>Admin.css</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\LinkCss\changePassword.css">
+      <DependentUpon>changePassword.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\LinkCss\changePassword.min.css">
+      <DependentUpon>changePassword.css</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\LinkCss\ConfirmPay.css">
+      <DependentUpon>ConfirmPay.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\LinkCss\ConfirmPay.min.css">
+      <DependentUpon>ConfirmPay.css</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\LinkCss\dkinfo.css" />
+    <Content Include="daVasst_Store\LinkCss\dstk.css" />
+    <Content Include="daVasst_Store\LinkCss\listproductAdmin.css">
+      <DependentUpon>listproductAdmin.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\LinkCss\listproductAdmin.min.css">
+      <DependentUpon>listproductAdmin.css</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\LinkCss\loginAdmin.css">
+      <DependentUpon>loginAdmin.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\LinkCss\loginAdmin.min.css">
+      <DependentUpon>loginAdmin.css</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\LinkCss\orderstatus.css">
+      <DependentUpon>orderstatus.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\LinkCss\orderstatus.min.css">
+      <DependentUpon>orderstatus.css</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\LinkCss\Pay.css">
+      <DependentUpon>Pay.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\LinkCss\Pay.min.css">
+      <DependentUpon>Pay.css</DependentUpon>
+    </Content>
     <Content Include="daVasst_Store\LinkCss\productList.css">
       <DependentUpon>productList.scss</DependentUpon>
     </Content>
     <Content Include="daVasst_Store\LinkCss\productList.min.css">
       <DependentUpon>productList.css</DependentUpon>
     </Content>
+    <Content Include="daVasst_Store\LinkCss\updateProductAdmin.css">
+      <DependentUpon>updateProductAdmin.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\LinkCss\updateProductAdmin.min.css">
+      <DependentUpon>updateProductAdmin.css</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\LinkJS\addProduct.js" />
+    <Content Include="daVasst_Store\LinkJS\changePassWord.js" />
+    <Content Include="daVasst_Store\LinkJS\dkinfo.js" />
+    <Content Include="daVasst_Store\LinkJS\infomation.js" />
+    <Content Include="daVasst_Store\LinkJS\masterpage.js" />
+    <Content Include="daVasst_Store\LinkJS\Pay.js" />
+    <Content Include="daVasst_Store\LinkJS\productAdmin.js" />
     <Content Include="daVasst_Store\login\login.css">
       <DependentUpon>login.scss</DependentUpon>
     </Content>
-    <Content Include="daVasst_Store\login\login.js" />
     <Content Include="daVasst_Store\login\login.min.css">
       <DependentUpon>login.css</DependentUpon>
     </Content>
     <Content Include="daVasst_Store\login\loginControl.ascx" />
+    <Content Include="daVasst_Store\productDetail\productDetail.ascx" />
+    <Content Include="daVasst_Store\productDetail\productDetail.js" />
+    <Content Include="daVasst_Store\productDetail\productItem.css">
+      <DependentUpon>productItem.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\productDetail\productItem.min.css">
+      <DependentUpon>productItem.css</DependentUpon>
+    </Content>
     <Content Include="daVasst_Store\productListItem\productListItem.ascx" />
     <Content Include="daVasst_Store\productListItem\productListItem.css">
       <DependentUpon>productListItem.scss</DependentUpon>
     </Content>
+    <Content Include="daVasst_Store\productListItem\productListItem.js" />
     <Content Include="daVasst_Store\productListItem\productListItem.min.css">
       <DependentUpon>productListItem.css</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\RelateProduct\relateproduct.ascx" />
+    <Content Include="daVasst_Store\RelateProduct\relateproduct.css">
+      <DependentUpon>relateproduct.scss</DependentUpon>
+    </Content>
+    <Content Include="daVasst_Store\RelateProduct\relateproduct.js" />
+    <Content Include="daVasst_Store\RelateProduct\relateproduct.min.css">
+      <DependentUpon>relateproduct.css</DependentUpon>
     </Content>
     <Content Include="daVasst_Store\SearchBox\search.ascx" />
     <Content Include="daVasst_Store\SearchBox\search.css">
@@ -187,10 +299,15 @@
     </Content>
     <Content Include="daVasst_Store\signupControl\signupControl.ascx" />
     <Content Include="Global.asax" />
+    <Content Include="Image\arrow-drop-down-fill.png" />
+    <Content Include="Image\arrow-drop-right-fill.png" />
+    <Content Include="Image\arrow-left-line.png" />
+    <Content Include="Image\arrow-right-line.png" />
     <Content Include="Image\aytao.jpg" />
     <Content Include="Image\banner2.png" />
     <Content Include="Image\banner.png" />
     <Content Include="Image\bonsaimini.jpg" />
+    <Content Include="Image\camera.jpg" />
     <Content Include="Image\caychanhleo.jpg" />
     <Content Include="Image\caydeban.jpg" />
     <Content Include="Image\caynho.jpg" />
@@ -210,6 +327,10 @@
     <Content Include="Image\menu-2-line.png" />
     <Content Include="Image\ngocngan.jpg" />
     <Content Include="Image\nhatviet.jpg" />
+    <Content Include="Image\plus %281%29.png" />
+    <Content Include="Image\plus.png" />
+    <Content Include="Image\product-hunt-line.png" />
+    <Content Include="Image\product.png" />
     <Content Include="Image\raumathuysinh.jpg" />
     <Content Include="Image\raumatreo.jpg" />
     <Content Include="Image\search-line.png" />
@@ -220,6 +341,7 @@
     <Content Include="Image\thailaitimleo.jpg" />
     <Content Include="Image\traitimxah.jpg" />
     <Content Include="Image\traubatreo.jpg" />
+    <Content Include="Image\user.png" />
     <Content Include="Image\xuongrong.jpg" />
     <Content Include="Image\xuongrongbattien.jpg" />
     <Content Include="Image\xuongrongcauvong.jpg" />
@@ -227,8 +349,109 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\categoryDao.cs" />
+    <Compile Include="DAO\daoAdmin.cs" />
+    <Compile Include="DAO\orderDao.cs" />
+    <Compile Include="DAO\orderDetailDao.cs" />
     <Compile Include="DAO\productDao.cs" />
     <Compile Include="DAO\userDao.cs" />
+    <Compile Include="daVasstAdmin\addProduct.aspx.cs">
+      <DependentUpon>addProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasstAdmin\addProduct.aspx.designer.cs">
+      <DependentUpon>addProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasstAdmin\admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasstAdmin\admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasstAdmin\daVasstAdmin.Master.cs">
+      <DependentUpon>daVasstAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasstAdmin\daVasstAdmin.Master.designer.cs">
+      <DependentUpon>daVasstAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="daVasstAdmin\dsTaiKhoan.aspx.cs">
+      <DependentUpon>dsTaiKhoan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasstAdmin\dsTaiKhoan.aspx.designer.cs">
+      <DependentUpon>dsTaiKhoan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasstAdmin\ListProduct.aspx.cs">
+      <DependentUpon>ListProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasstAdmin\ListProduct.aspx.designer.cs">
+      <DependentUpon>ListProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasstAdmin\login4Admin.aspx.cs">
+      <DependentUpon>login4Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasstAdmin\login4Admin.aspx.designer.cs">
+      <DependentUpon>login4Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasstAdmin\productDetailAdmin.aspx.cs">
+      <DependentUpon>productDetailAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasstAdmin\productDetailAdmin.aspx.designer.cs">
+      <DependentUpon>productDetailAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasstAdmin\removeProduct.aspx.cs">
+      <DependentUpon>removeProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasstAdmin\removeProduct.aspx.designer.cs">
+      <DependentUpon>removeProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasstTree\cart.aspx.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasstTree\cart.aspx.designer.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasstTree\changePassword.aspx.cs">
+      <DependentUpon>changePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasstTree\changePassword.aspx.designer.cs">
+      <DependentUpon>changePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasstTree\confirmpay.aspx.cs">
+      <DependentUpon>confirmpay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasstTree\confirmpay.aspx.designer.cs">
+      <DependentUpon>confirmpay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasstTree\DkInfo.aspx.cs">
+      <DependentUpon>DkInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasstTree\DkInfo.aspx.designer.cs">
+      <DependentUpon>DkInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasstTree\OrderStatus.aspx.cs">
+      <DependentUpon>OrderStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasstTree\OrderStatus.aspx.designer.cs">
+      <DependentUpon>OrderStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasstTree\productDetail.aspx.cs">
+      <DependentUpon>productDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasstTree\productDetail.aspx.designer.cs">
+      <DependentUpon>productDetail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="daVasstTree\productList.aspx.cs">
       <DependentUpon>productList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -257,12 +480,26 @@
     <Compile Include="daVasstTree\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="daVasstTree\signout.aspx.cs">
+      <DependentUpon>signout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasstTree\signout.aspx.designer.cs">
+      <DependentUpon>signout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="daVasstTree\signup.aspx.cs">
       <DependentUpon>signup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="daVasstTree\signup.aspx.designer.cs">
       <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasstTree\ThanhToan.aspx.cs">
+      <DependentUpon>ThanhToan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasstTree\ThanhToan.aspx.designer.cs">
+      <DependentUpon>ThanhToan.aspx</DependentUpon>
     </Compile>
     <Compile Include="daVasst_Store\banner\bannerControl.ascx.cs">
       <DependentUpon>bannerControl.ascx</DependentUpon>
@@ -284,6 +521,13 @@
     </Compile>
     <Compile Include="daVasst_Store\BreadCrumbs\breadcrumb.ascx.designer.cs">
       <DependentUpon>breadcrumb.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasst_Store\CartDetail\cartDetail.ascx.cs">
+      <DependentUpon>cartDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasst_Store\CartDetail\cartDetail.ascx.designer.cs">
+      <DependentUpon>cartDetail.ascx</DependentUpon>
     </Compile>
     <Compile Include="daVasst_Store\Category\category.ascx.cs">
       <DependentUpon>category.ascx</DependentUpon>
@@ -334,6 +578,13 @@
     <Compile Include="daVasst_Store\header\header.ascx.designer.cs">
       <DependentUpon>header.ascx</DependentUpon>
     </Compile>
+    <Compile Include="daVasst_Store\Infomation\Infomation.ascx.cs">
+      <DependentUpon>Infomation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasst_Store\Infomation\Infomation.ascx.designer.cs">
+      <DependentUpon>Infomation.ascx</DependentUpon>
+    </Compile>
     <Compile Include="daVasst_Store\login\loginControl.ascx.cs">
       <DependentUpon>loginControl.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -341,12 +592,26 @@
     <Compile Include="daVasst_Store\login\loginControl.ascx.designer.cs">
       <DependentUpon>loginControl.ascx</DependentUpon>
     </Compile>
+    <Compile Include="daVasst_Store\productDetail\productDetail.ascx.cs">
+      <DependentUpon>productDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasst_Store\productDetail\productDetail.ascx.designer.cs">
+      <DependentUpon>productDetail.ascx</DependentUpon>
+    </Compile>
     <Compile Include="daVasst_Store\productListItem\productListItem.ascx.cs">
       <DependentUpon>productListItem.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="daVasst_Store\productListItem\productListItem.ascx.designer.cs">
       <DependentUpon>productListItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="daVasst_Store\RelateProduct\relateproduct.ascx.cs">
+      <DependentUpon>relateproduct.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daVasst_Store\RelateProduct\relateproduct.ascx.designer.cs">
+      <DependentUpon>relateproduct.ascx</DependentUpon>
     </Compile>
     <Compile Include="daVasst_Store\SearchBox\search.ascx.cs">
       <DependentUpon>search.ascx</DependentUpon>
@@ -365,9 +630,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Model\Admin.cs" />
+    <Compile Include="Model\CartProduct.cs" />
     <Compile Include="Model\Categoryy.cs" />
+    <Compile Include="Model\order.cs" />
+    <Compile Include="Model\orderDetail.cs" />
     <Compile Include="Model\Product.cs" />
     <Compile Include="Model\User.cs" />
+    <Compile Include="Model\UserInfomationOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -387,10 +657,23 @@
     <Content Include="daVasst_Store\CaySenDa\senda.scss" />
     <Content Include="daVasst_Store\ChauCay\chaucay.scss" />
     <Content Include="daVasst_Store\Category\category.scss" />
+    <Content Include="daVasst_Store\CartDetail\cartDetail.scss" />
     <None Include="daVasst_Store\footer\.editorconfig" />
     <Content Include="daVasst_Store\SearchBox\search.scss" />
     <Content Include="daVasst_Store\LinkCss\productList.scss" />
     <Content Include="daVasst_Store\productListItem\productListItem.scss" />
+    <Content Include="daVasst_Store\productDetail\productItem.scss" />
+    <Content Include="daVasst_Store\RelateProduct\relateproduct.scss" />
+    <Content Include="daVasst_Store\Infomation\Infomation.scss" />
+    <Content Include="daVasst_Store\LinkCss\Pay.scss" />
+    <Content Include="daVasst_Store\LinkCss\orderstatus.scss" />
+    <Content Include="daVasst_Store\LinkCss\Admin.scss" />
+    <Content Include="daVasst_Store\LinkCss\listproductAdmin.scss" />
+    <Content Include="daVasst_Store\LinkCss\loginAdmin.scss" />
+    <Content Include="daVasst_Store\LinkCss\updateProductAdmin.scss" />
+    <Content Include="daVasst_Store\LinkCss\addproductAdmin.scss" />
+    <Content Include="daVasst_Store\LinkCss\ConfirmPay.scss" />
+    <Content Include="daVasst_Store\LinkCss\changePassword.scss" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -416,6 +699,8 @@
           <DevelopmentServerPort>50483</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>https://localhost:44321/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>https://localhost:44321/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

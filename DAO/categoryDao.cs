@@ -21,7 +21,7 @@ namespace daVasstTrees.DAO
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                Categoryy c = new Categoryy(dr.GetInt32(0),dr.GetString(1),dr.GetString(2));
+                Categoryy c = new Categoryy(dr.GetInt32(0), dr.GetString(1), dr.GetString(2));
                 list.Add(c);
             }
             cmd.Dispose();

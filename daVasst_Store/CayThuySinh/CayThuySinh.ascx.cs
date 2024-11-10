@@ -27,7 +27,7 @@ namespace daVasstTrees.daVasst_Store.CayThuySinh
                     $"<div class=\"listCayThuySinh-item-info\">\r\n               " +
                     $"<p class=\"listCayThuySinh-item-info__name\">{x.Name}</p>\r\n                    " +
                     $"<p class=\"listCayThuySinh-item-info__price\">{x.Price.ToString("#,## đ")}</p>\r\n                    " +
-                    $"<button class=\"listCayThuySinh-item-info__btn\"><a href=\"#\">Thêm vào giỏ hàng</a></button>\r\n         " +
+                    $"<button class=\"listCayThuySinh-item-info__btn\"><a href=\"cart.aspx?id={x.ProductID}\">Thêm vào giỏ hàng</a></button>\r\n         " +
                     $" </div>\r\n  </div>";
                 }
                 else
@@ -38,7 +38,7 @@ namespace daVasstTrees.daVasst_Store.CayThuySinh
                         $"<img src={x.LinkImg} alt={x.Name} class=\"listCayThuySinh__item-imgSuro-img\" />\r\n </div>\r\n " +
                         $"<div class=\"listCayThuySinh-item-info\">\r\n  <p class=\"listCayThuySinh-item-info__name\">{x.Name}</p>\r\n " +
                         $"<span class=\"listCayThuySinh-item-info__dash\">{oldPrice.ToString("#,## đ")}</span>\r\n  <span class=\"listCayThuySinh-item-info__price\">{x.Price.ToString("#,## đ")}</span>\r\n " +
-                        $" <button class=\"listCayThuySinh-item-info__btn\"><a href=\"#\">Thêm vào giỏ hàng</a></button>\r\n                </div>\r\n               " +
+                        $" <button class=\"listCayThuySinh-item-info__btn\"><a href=\"cart.aspx?id={x.ProductID}\">Thêm vào giỏ hàng</a></button>\r\n                </div>\r\n               " +
                         $" <span class=\"listCayThuySinh__item-discount\">{x.DiscountPercent} %</span>\r\n</div>";
                 }
             }

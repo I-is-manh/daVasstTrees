@@ -1,0 +1,137 @@
+﻿@import url("../../daVasstTrees.css");
+.infomation {
+  padding-block: 20px;
+}
+.infomation-titleheader {
+  color: var(--color_green_main);
+  margin-bottom: 10px;
+}
+/*css cho form*/
+.infomation-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.infomation-detail__item {
+  width: 30%;
+  padding-block: 15px;
+}
+.infomation-detail__item label {
+  font-size: 18px;
+  color: var(--color_green_main);
+}
+.infomation-detail__item input {
+  font-size: 18px;
+  height: 30px;
+  padding-left: 5px;
+  border-radius: 5px;
+  width: 100%;
+}
+.infomation-detail-btn {
+  width: 85%;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+.infomation-detail-btn__signout a {
+  color: var(--color_white_main);
+}
+/*css cho phần hình ảnh*/
+.infomation-detail-updateimg {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  position: relative;
+  align-items: center;
+  gap: 20px;
+}
+.infomation-detail-updateimg__img {
+  position: relative;
+}
+.infomation-detail-updateimg__img img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.infomation-detail-updateimg__camera {
+  position: relative;
+  overflow: hidden;
+  position: absolute;
+  width: 30px;
+  bottom: 0;
+  right: 5px;
+}
+.infomation-detail-updateimg__camera img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.infomation-detail-updateimg__camera input {
+  position: absolute;
+  z-index: 999;
+  cursor: pointer;
+  left: 0;
+  top: 25%;
+  opacity: 0;
+}
+.infomation-detail-updateimg p {
+  color: var(--color_green_main);
+  font-size: 35px;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: none;
+}
+.overlay-notify {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-block: 30px;
+  padding-inline: 10px;
+  background: var(--color_white_main);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 99999;
+}
+.overlay-notify__title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.overlay-notify button {
+  width: fit-content;
+  padding-inline: 20px;
+}
+
+.overlay-hidden {
+  display: none;
+}
+/*đây là phần đi thi cho clo 1 với màn hình desktop là 3 cột mobile là 2 cột*/
+@media screen and (max-width:992px){
+    .infomation-detail__item {
+        width: 45%;
+        padding-block: 15px;
+    }
+}
+@media screen and (max-width:576px) {
+    .infomation-detail__item {
+        width: 100%;
+        padding-block: 15px;
+    }
+        .infomation-detail__item input {
+            font-size: 16px;
+            height: 30px;
+            padding-left: 5px;
+            border-radius: 5px;
+            width: 100%;
+        }
+}

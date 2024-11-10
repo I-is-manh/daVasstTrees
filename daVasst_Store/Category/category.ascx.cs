@@ -20,22 +20,34 @@ namespace daVasstTrees.daVasst_Store.Category
                 id = int.Parse(Request.QueryString["id"]);
             }
             List<Categoryy> list = dao.getListCategory();
-            string str = "";
+            string str = "<li class=\"category-surro-list__item\"><a href=\"productList.aspx?page=1\">Tất cả sản phẩm</a>\r\n            </li>";
             foreach(Categoryy x in list)
             {
                 if(x.Id == id)
                 {
-                    str += $"<li class=\"category-surro-list__item active\"><a href=\"productList.aspx?id={x.Id}\" class=\"active-a\">{x.Name}</a>\r\n " +
+                    str += $"<li class=\"category-surro-list__item active\"><a href=\"productList.aspx?id={x.Id}&page=1\" class=\"active-a\">{x.Name}</a>\r\n " +
                         $"</li>";
                 }
                 else
                 {
-                    str += $"<li class=\"category-surro-list__item\"><a href=\"productList.aspx?id={x.Id}\">{x.Name}</a>\r\n " +
+                    str += $"<li class=\"category-surro-list__item\"><a href=\"productList.aspx?id={x.Id}&page=1\">{x.Name}</a>\r\n " +
                         $"</li>";
                 }
 
             }
             listCategory.InnerHtml = str;
+            if (Request.Form["gia"] != null)
+            {
+                if (Request.QueryString["gia"] == "thapdencao")
+                {
+                    thapdencao.Checked = true;
+                }
+                else
+                {
+                    caodenthap.Checked = true;
+                }
+            }
+            
         }
     }
 }

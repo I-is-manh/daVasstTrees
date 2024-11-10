@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="daVasstAdmin.master.cs" Inherits="daVasstTrees.daVasstAdmin.daVasstAdmin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Trang quản trị</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../daVasst_Store/LinkCss/Admin.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="admin">
+        <div class="admin-navigation">
+            <p class="admin-navigation__logo">daVasst</p>
+            <div class="admin-navigation-router">
+                <div class="admin-navigation-router-product">
+                    <div class="surro-product">
+                        <img src="../Image/product-hunt-line.png" alt="Alternate Text" />
+                        Sản phẩm
+                        <img src="../Image/arrow-drop-right-fill.png" class="arrow" alt="Alternate Text" />
+                    </div>
+                    <ul class="admin-navigation-router-product-list">
+                        <li class="admin-navigation-router-product-list__item list-item">
+                            <img src="../Image/menu-2-line.png" alt="Alternate Text" />
+                            Danh sách sản phẩm
+                            <img src="../Image/arrow-drop-right-fill.png" class="arrow-item" alt="Alternate Text" />
+                        </li>
+                        <ul class="list-category">
+                            <li class="list-category__item"><a href="ListProduct.aspx?page=1">Tất cả sản phẩm</a></li>
+                            <li class="list-category__item"><a href="ListProduct.aspx?id=1&page=1">Cây cảnh để bàn</a></li>
+                            <li class="list-category__item"><a href="ListProduct.aspx?id=2&page=1">Cây thủy sinh</a></li>
+                            <li class="list-category__item"><a href="ListProduct.aspx?id=3&page=1">Sen đá và xương rồng</a></li>
+                            <li class="list-category__item"><a href="ListProduct.aspx?id=4&page=1">Cây chậu treo</a></li>
+                            <li class="list-category__item"><a href="ListProduct.aspx?id=5&page=1">Cây ăn trái</a></li>
+                            <li class="list-category__item"><a href="ListProduct.aspx?id=6&page=1">Chậu cây cảnh</a></li>
+                        </ul>
+                        <li class="admin-navigation-router-product-list__item">
+                            <img src="../Image/plus (1).png" alt="Alternate Text" /><a href="addProduct.aspx">Thêm sản phẩm</a>
+                        </li>
+                       <%-- <li class="admin-navigation-router-product-list__item">
+                            <img src="../Image/user.png" alt="Alternate Text" /><a href="dsTaiKhoan.aspx">Danh sách sản phẩm</a>
+                        </li>--%>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="admin-content">
+            <div class="admin-content-header">
+                <img src="../Image/menu-2-line.png" alt="Alternate Text" />
+                <div class="searchBox">
+                    <form action="ListProduct.aspx" method="get" class="searchBox-item">
+                        <input type="text" name="key" value="" class="searchBox-item__inp" placeholder="Tìm kiếm" />
+                        <input type="hidden" name="page" value="1" />
+                        <img src="../../Image/search-line.png" alt="Alternate Text" class="searchBox-item__icon" />
+                    </form>
+                </div>
+                <p class="admin-content-header__name" id="nameAdmin" runat="server">Hi! daVasst Ngoo hi en</p>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <script src="../daVasst_Store/LinkJS/masterpage.js"></script>
+</body>
+</html>
+<%--<asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+</asp:ContentPlaceHolder>--%>

@@ -16,9 +16,10 @@
     <daVasst:search runat="server" />
     <div class="container-fluid productList">
         <div class="detailmain">
-            <daVasst:category runat="server"/>
-            <daVasst:listitem runat="server"/>
+            <daVasst:category runat="server" class="hehe"/>
+            <daVasst:listitem runat="server" class="hihi"/>
         </div>
     </div>
+   
 </body>
 </html>

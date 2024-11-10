@@ -4,7 +4,7 @@
     <div class="container listcaythuysinh-child">
         <div class="listcaythuysinh-child-header">
             <p class="listcaythuysinh-child-header__title">Cây thủy sinh</p>
-            <button class="listcaythuysinh-child-header__btn"><a href="#">Xem tất cả</a> <span>></span></button>
+            <button class="listcaythuysinh-child-header__btn"><a href="productList.aspx?id=2&page=1">Xem tất cả</a> <span>></span></button>
         </div>
         <div class="listcaythuysinh-child__hr"></div>
         <div class="listCayThuySinh" runat="server" id="listCayThuySinh">

@@ -99,6 +99,7 @@
   width: 100%;
   padding: 10px;
   background: white;
+  transition: all 0.25s ease;
 }
 .headerNav-list__sub-item .treeDetail-item a {
   color: var(--color_green_main);

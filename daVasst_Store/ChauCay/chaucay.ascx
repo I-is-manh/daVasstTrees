@@ -3,8 +3,8 @@
 <div class="container-fluid">
     <div class="container">
         <div class="container-header">
-            <p class="container-header__title">Cây thủy sinh</p>
-            <button class="container-header__btn"><a href="#">Xem tất cả</a> <span>></span></button>
+            <p class="container-header__title">Chậu cây</p>
+            <button class="container-header__btn"><a href="productList.aspx?id=6&page=1">Xem tất cả</a> <span>></span></button>
         </div>
         <div class="container__hr"></div>
         <div class="listChauCay" runat="server" id="listChauCay">

@@ -6,4 +6,6 @@
   background: var(--color_white_main);
   font-size: 25px;
   color: var(--color_green_main);
+  position:fixed;
+  bottom:0;
 }

@@ -160,3 +160,59 @@
   left: 0;
   color: var(--color_green_main);
 }
+
+@media screen and (max-width: 992px) {
+  .container-fluid .container .listSenDa__item {
+    width: 45%;
+  }
+  .container-fluid .container .listSenDa__item .listSenDa-item-info__btn {
+    padding-block: 3px;
+    padding-inline: 5px;
+    border-radius: 20px;
+  }
+  .container-fluid .container .listSenDa__item .listSenDa-item-info__btn a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-fluid .container-header__btn {
+    padding: 7px;
+    font-size: 12px;
+  }
+  .container-fluid .container-header__btn span {
+    font-size: 12px;
+  }
+  .container-fluid .container .listSenDa__item {
+    width: 45%;
+  }
+  .container-fluid .container .listSenDa__item .listSenDa-item-info__btn {
+    padding-block: 2px;
+    padding-inline: 4px;
+    border-radius: 20px;
+  }
+  .container-fluid .container .listSenDa__item .listSenDa-item-info__btn a {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container-fluid .container-header__btn {
+    padding: 0;
+  }
+  .container-fluid .container-header__btn a {
+    font-size: 17px;
+  }
+  .container-fluid .container-header__btn span {
+    font-size: 17px;
+  }
+  .container-fluid .container .listSenDa__item {
+    width: 100%;
+  }
+  .container-fluid .container .listSenDa__item .listSenDa-item-info__btn {
+    padding-block: 3px;
+    padding-inline: 7px;
+    border-radius: 20px;
+  }
+  .container-fluid .container .listSenDa__item .listSenDa-item-info__btn a {
+    font-size: 15px;
+  }
+}

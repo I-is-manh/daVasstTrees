@@ -27,7 +27,7 @@ namespace daVasstTrees.daVasst_Store.ChauCay
                     $"<div class=\"listChauCay-item-info\">\r\n               " +
                     $"<p class=\"listChauCay-item-info__name\">{x.Name}</p>\r\n                    " +
                     $"<p class=\"listChauCay-item-info__price\">{x.Price.ToString("#,## đ")}</p>\r\n                    " +
-                    $"<button class=\"listChauCay-item-info__btn\"><a href=\"#\">Thêm vào giỏ hàng</a></button>\r\n         " +
+                    $"<button class=\"listChauCay-item-info__btn\"><a href=\"cart.aspx?id={x.ProductID}\">Thêm vào giỏ hàng</a></button>\r\n         " +
                     $" </div>\r\n  </div>";
                 }
                 else
@@ -38,7 +38,8 @@ namespace daVasstTrees.daVasst_Store.ChauCay
                         $"<img src={x.LinkImg} alt={x.Name} class=\"listChauCay__item-imgSuro-img\" />\r\n </div>\r\n " +
                         $"<div class=\"listChauCay-item-info\">\r\n  <p class=\"listChauCay-item-info__name\">{x.Name}</p>\r\n " +
                         $"<span class=\"listChauCay-item-info__dash\">{oldPrice.ToString("#,## đ")}</span>\r\n  <span class=\"listChauCay-item-info__price\">{x.Price.ToString("#,## đ")}</span>\r\n " +
-                        $" <button class=\"listChauCay-item-info__btn\"><a href=\"#\">Thêm vào giỏ hàng</a></button>\r\n                </div>\r\n               " +
+                        $" <button class=\"listChauCay-item-info__btn\"><a href=\"cart.aspx?id={x.ProductID}\">Thêm vào giỏ hàng</a></button>" +
+                        $"</div>" +
                         $" <span class=\"listChauCay__item-discount\">{x.DiscountPercent} %</span>\r\n</div>";
                 }
             }

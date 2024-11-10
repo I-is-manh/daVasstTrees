@@ -31,6 +31,21 @@ namespace daVasstTrees.DAO
                 return true;
             }
         }
+        public bool changePassWord(string  email,string password)
+        {
+            SqlConnection conn = new SqlConnection(strConnect);
+            SqlCommand cmd = conn.CreateCommand();
+            cmd.CommandText = $"update tblKhachHang " +
+                $"set customerPassword = '{password}' " +
+                $"where email = '{email}'";
+            conn.Open();
+            if(cmd.ExecuteNonQuery() == -1)
+            {
+                return false;
+            }
+            else
+            return true;
+        }
         public User getInfomation(string email, string password)
         {
             SqlConnection con = new SqlConnection(strConnect);
@@ -42,11 +57,26 @@ namespace daVasstTrees.DAO
             User user = new User();
             while (dr.Read())
             {
-                user = new User(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetString(4), dr.GetString(5), dr.GetString(7));
+                user = new User(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr["address"].ToString(), dr["numberphone"].ToString(), dr["avatar"].ToString(), dr["customerFullName"].ToString());
             }
             cmd.Dispose();
             con.Close();
             return user;
+        }
+        public void updateUser(int id,string name,string email,string address,string numberphone,string linkimg)
+        {
+            SqlConnection conn = new SqlConnection(strConnect);
+            SqlCommand cmd = conn.CreateCommand();
+            //cmd.CommandText = $"update tblKhachHang" +
+            //    $"set email = \'{email}\' , address=\'{address}\', numberphone=\'{numberphone}\', avatar=\'{linkimg}\',customerFullName = \'{name}\'" +
+            //    $"where customerId = \'{id}\'";
+            cmd.CommandText = $"update tblKhachHang " +
+                $"set email = '{email}', address = N'{address}', numberphone='{numberphone}', avatar = '{linkimg}', customerFullName=N'{name}'" +
+                $"where customerId = '{id}'";
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            cmd.Dispose();
+            conn.Close();
         }
         public int checkEmailExist(string email)
         {
@@ -85,5 +115,6 @@ namespace daVasstTrees.DAO
                 return true;
             }
         }
+        
     }
 }

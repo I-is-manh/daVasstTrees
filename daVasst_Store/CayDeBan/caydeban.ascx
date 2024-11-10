@@ -3,7 +3,7 @@
     <div class="container listcaydeban-child">
         <div class="listcaydeban-child-header">
             <p class="listcaydeban-child-header__title">Cây để bàn</p>
-            <button class="listcaydeban-child-header__btn"><a href="#">Xem tất cả</a> <span>></span></button>
+            <button class="listcaydeban-child-header__btn"><a href="productList.aspx?id=1&page=1">Xem tất cả</a> <span>></span></button>
         </div>
         <div class="listcaydeban-child__hr"></div>
         <div class="listCayDeBan" runat="server" id="listCayDeBan">

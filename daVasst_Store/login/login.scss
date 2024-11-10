@@ -47,7 +47,6 @@
             &:focus, &:user-valid {
                 border: 1px solid var(--color_green_main);
             }
-
             &:focus + .formLogin__taikhoan__label, &:user-valid + .formLogin__taikhoan__label {
                 background: var(--color_white_main);
                 top: 0;

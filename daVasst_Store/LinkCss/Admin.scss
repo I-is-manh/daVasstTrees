@@ -1,0 +1,176 @@
+﻿@import url("../../daVasstTrees.css");
+.admin {
+    display: flex;
+
+    &-navigation {
+        border: 1px solid rgba(0,0,0,0.3);
+        width: 20%;
+        background:var(--color_white_main);
+
+        &__logo {
+            color: var(--color_green_main);
+            background: var(--color_white_main);
+            text-align: center;
+            font-size: 35px;
+            font-weight: 600;
+            height: 80px;
+            line-height: 80px;
+            border-bottom:1px solid rgba(0,0,0,0.2);
+        }
+
+        &-router {
+            padding-top: 25px;
+
+            &-product {
+                img {
+                    width: 35px;
+                    height: 35px;
+                    margin-right: 7px;
+                    background: var(--color_white_main);
+                    background-color: transparent;
+                }
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    background: var(--color_white_main);
+                    cursor: pointer;
+                    position: relative;
+                    padding-left: 5px;
+
+                    .arrow {
+                        position: absolute;
+                        right: 0px;
+                        background-color: transparent;
+                    }
+                }
+
+                &-list {
+                    background: var(--color_white_main);
+                    display: none;
+
+                    &__item {
+                        background: var(--color_white_main);
+                        padding-block: 10px;
+                        transition: 0.25s ease;
+                        padding-left: 45px;
+                        display: flex;
+                        align-items: center;
+                        &:hover {
+                            background: white;
+                            cursor: pointer;
+                        }
+
+                        img {
+                            width: 20px;
+                            height: 20px;
+                            color: var(--color_white_main);
+
+                            &:hover {
+                                color: white;
+                            }
+                        }
+
+                        a {
+                            color: black;
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .arrow-item {
+                            background-color: transparent;
+                            width: 35px;
+                            height: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-content {
+        flex: 1;
+
+        &-header {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            padding-inline: 10px;
+            background: var(--color_white_main);
+            border-bottom:1px solid rgba(0,0,0,0.3);
+            &__name {
+                text-align: right;
+                font-size: 25px;
+                width: 100%;
+            }
+
+            img {
+                cursor: pointer;
+            }
+
+            .searchBox {
+                width: fit-content;
+                display: flex;
+                margin-left: 20px;
+                background: white;
+
+                &-item {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    border: 1px solid black;
+                    border-radius: 5px;
+                    height: 35px;
+                    cursor: pointer;
+
+                    &__inp {
+                        width: 86%;
+                        height: 100%;
+                        outline: none;
+                        border-top-left-radius: 20px;
+                        border-bottom-left-radius: 20px;
+                        padding-left: 5px;
+                        font-size: 18px;
+                        border: none;
+                    }
+
+                    &__icon {
+                        position: absolute;
+                        right: 0;
+                        background: white;
+                    }
+                   
+                }
+            }
+        }
+    }
+}
+.arrow-down{
+    transform:rotate(90deg);
+}
+.list-show{
+    display:block;
+}
+.list-category {
+    display:none;
+    &__item{
+        padding-left:24%;
+        font-size:18px;
+        padding-block:7px;
+        transition:0.25s ease;
+        a{
+            color:black;
+        }
+        &:hover{
+            background:white;
+        }
+    }
+}
+.list-category__show{
+    display:block;
+}
+@media screen and (max-width : 992px){
+    .admin-navigation{
+        display:none;
+    }
+}

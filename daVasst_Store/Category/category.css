@@ -72,3 +72,14 @@
 .active .active-a {
   color: var(--color_white_main);
 }
+.showlist{
+    display:block;
+}
+@media screen and (max-width:992px){
+    .category {
+        width: 100%;
+    }
+    .category-surro-list{
+        display:none;
+    }
+}

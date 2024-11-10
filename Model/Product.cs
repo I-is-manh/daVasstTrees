@@ -59,7 +59,7 @@ namespace daVasstTrees.Model
         // Getter và Setter cho price
         public float Price
         {
-            get { return price; }
+            get { return this.price; }
             set { price = value; }
         }
 

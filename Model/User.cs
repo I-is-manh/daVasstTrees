@@ -14,6 +14,7 @@ namespace daVasstTrees.Model
         private string numberphone;
         private string avatar;
         private string fullName;
+        private string confirmcode;
         public User()
         {
 
@@ -27,6 +28,17 @@ namespace daVasstTrees.Model
             this.numberphone = numberphone;
             this.avatar = avatar;
             this.fullName = fullName;
+        }
+        public User(int customerID, string email, string customerPassword, string address, string numberphone, string avatar, string fullName,string confirmcode)
+        {
+            this.customerID = customerID;
+            this.email = email;
+            this.customerPassword = customerPassword;
+            this.address = address;
+            this.numberphone = numberphone;
+            this.avatar = avatar;
+            this.fullName = fullName;
+            this.confirmcode = confirmcode;
         }
         public int GetCustomerID()
         {
@@ -54,7 +66,10 @@ namespace daVasstTrees.Model
         {
             return customerPassword;
         }
-
+        public string getConfirm()
+        {
+            return this.confirmcode;
+        }
         public void SetCustomerPassword(string value)
         {
             customerPassword = value;
@@ -85,7 +100,7 @@ namespace daVasstTrees.Model
         // Getter và Setter cho avatar
         public string GetAvatar()
         {
-            return avatar;
+            return this.avatar;
         }
 
         public void SetAvatar(string value)

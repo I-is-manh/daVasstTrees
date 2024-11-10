@@ -38,6 +38,15 @@
             border-radius: 35px;
             border: none;
             cursor: pointer;
+            transition: all 0.25s ease;
+
+            a {
+                color: var(--color_white_main);
+            }
+
+            &:hover {
+                opacity: 0.8;
+            }
         }
     }
 }

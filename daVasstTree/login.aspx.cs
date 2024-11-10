@@ -46,7 +46,7 @@ namespace daVasstTrees.daVasst
                 else
                 {
                     labelError.Style.Add("display", "block");
-                    inptk.Value = "";
+                    //inptk.Value = "";
                     inptk.Style.Add("border","1px solid red");
                     labeltk.Style.Add("color", "red");
                     inpmk.Style.Add("border", "1px solid red");
